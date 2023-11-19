@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log Query Interface</title>
+</head>
+<body>
+  <h1>Log Query Interface</h1>
+
+  <form id="queryForm">
+    <label for="level">Level:</label>
+    <input type="text" id="level" name="level">
+
+    <label for="message">Message:</label>
+    <input type="text" id="message" name="message">
+
+    <!-- Add other input fields for filters -->
+
+    <button type="button" onclick="searchLogs()">Search</button>
+  </form>
+
+  <div id="results"></div>
+
+  <script>
+    function searchLogs() {
+      const level = document.getElementById('level').value;
+      const message = document.getElementById('message').value;
+
+      // Collect other filter values
+
+      // Send HTTP request to query logs based on filters
+      // Update the #results div with the search results
+    }
+  </script>
+</body>
+</html>
